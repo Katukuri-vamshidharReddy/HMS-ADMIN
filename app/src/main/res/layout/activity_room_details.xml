@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rdlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoomDetailsActivity">
+
+    <EditText
+        android:id="@+id/editextroom_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editextroom_type"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/editextbg"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/editextroom_no"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editextroom_name"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/editextbg"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_roomdaetails"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editextroom_no"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/editextroom_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/editextbg"
+        android:editable="false"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/fab_bed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/buttonbg"
+        android:text="Manage Beds"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editextroom_no"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/updateroom_btn"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:text="UPDATE ROOM" />
+
+        <Button
+            android:id="@+id/deleteroom_btn"
+            android:layout_width="0dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/buttonbg"
+            android:text="Remove Room" />
+
+    </LinearLayout>
+
+
+    <!--    <Button-->
+    <!--        android:id="@+id/updateroom_btn"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_below="@+id/editextroom_type"-->
+    <!--        android:layout_marginLeft="35dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:background="@drawable/buttonbg"-->
+    <!--        android:text="UPDATE ROOM" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/deleteroom_btn"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_below="@+id/editextroom_type"-->
+    <!--        android:layout_marginLeft="220dp"-->
+    <!--        android:layout_marginTop="50dp"-->
+    <!--        android:background="@drawable/buttonbg"-->
+    <!--        android:text="Delete Room" />-->
+
+
+</RelativeLayout>
